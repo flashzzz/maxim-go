@@ -46,7 +46,7 @@ type ChatCompletionMessage struct {
 
 type ChatCompletionChoice struct {
 	Index        int                     `json:"index"`
-	Messages     []ChatCompletionMessage `json:"messages"`
+	Message      []ChatCompletionMessage `json:"message"`
 	LogProbs     interface{}             `json:"logprobs"`
 	FinishReason string                  `json:"finish_reason"`
 }
