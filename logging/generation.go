@@ -45,10 +45,10 @@ type ChatCompletionMessage struct {
 }
 
 type ChatCompletionChoice struct {
-	Index        int                     `json:"index"`
-	Message      []ChatCompletionMessage `json:"message"`
-	LogProbs     interface{}             `json:"logprobs"`
-	FinishReason string                  `json:"finish_reason"`
+	Index        int                   `json:"index"`
+	Message      ChatCompletionMessage `json:"message"`
+	LogProbs     interface{}           `json:"logprobs"`
+	FinishReason string                `json:"finish_reason"`
 }
 
 type TextCompletionChoice struct {
